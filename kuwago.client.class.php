@@ -57,17 +57,7 @@ class kuwago_client {
         return $result;
     }
 
-    /**
-     * kuwago_client::send_rest_data()
-     * 
-     * @param mixed $cmd
-     * @param mixed $data
-     * @return
-     */
-    public static function send_rest_data($cmd, $data) {
-        return self::call($cmd, $data);
-    }
-
+ 
     /**
      * kuwago_client::call()
      * 
