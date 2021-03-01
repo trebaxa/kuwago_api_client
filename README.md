@@ -1,13 +1,13 @@
-# kuwago_api_client
+# Kuwago API Client
 
 Use set_config function to set your API credentials from Kuwago.
 
 ## GET functions
-
+```txt
 get_product
 get_products
 
-
+```
 ## Example: 
 ```php
 $arr = kuwago_client::call('get_products');
