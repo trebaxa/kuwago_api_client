@@ -6,7 +6,11 @@ Use set_config function to set your API credentials from Kuwago.
 ```txt
 get_product
 get_products
-
+get_stock
+get_vendors
+get_customers
+get_costs
+get_customer
 ```
 ## Example: 
 ```php
