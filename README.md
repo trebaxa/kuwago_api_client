@@ -32,13 +32,13 @@ $arr = kuwago_client::call('get_stock', array() );
 $arr = kuwago_client::call('get_vendors', array() );
 
 ### Get list of all customers
-$arr = kuwago_client::call('load_customer', array() );
+$arr = kuwago_client::call('get_customers', array() );
 
 ### Get list of all costs
 $arr = kuwago_client::call('get_costs', array() );
 
-### get single customer by KNR
-$arr = kuwago_client::call('load_customer', array('KNR' => '112233') );
+### Get single customer by KNR
+$arr = kuwago_client::call('get_customer', array('KNR' => '112233') );
 
 
 
