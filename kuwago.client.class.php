@@ -65,7 +65,7 @@ class kuwago_client {
      * @param mixed $data
      * @return
      */
-    public static function call($cmd, $data) {
+    public static function call($cmd, $data = array()) {
         if (self::valid_connection()) {
             $params = array('data' => (array )$data, 'login' => array('mkid' => static::$config['mkid']));
             $res = self::rest_query(array('cmd' => $cmd, 'params' => json_encode($params)));
