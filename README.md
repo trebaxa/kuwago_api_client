@@ -44,6 +44,16 @@ $arr = kuwago_client::call('get_costs', array() );
 ### Get single customer by KNR
 $arr = kuwago_client::call('get_customer', array('KNR' => '112233') );
 
-
+### Add cost
+$result = kuwago_client::call('add_cost', array(
+      'co_date' => '2021-05-13', 
+      'co_invnr' => '112233', 
+      'co_ks_id' => '1', 
+      'co_skr_nr' => '3200',      
+      'co_skr_label' => 'Externe Dienstleistung',
+      'co_gegenkonto' => '1200',
+      'co_vendor_id' => '123456', 
+      'co_description' => 'some words',
+      'co_total' => '119.95') );
 
 ```
